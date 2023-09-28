@@ -9,7 +9,7 @@ const config = {
     "website": {
       "title": `Yusuffff`,
       "repo": `#`,
-      "author": `Yusuf Pemula`,
+      "author": `Yusuf Pemula`
     },
     "welcome": {
       "image": `<pre>
@@ -35,14 +35,14 @@ const config = {
       },
       "clear": {
         "usage": `clear`,
-        "description": `Bersih sampai akar h3h3h3`,
+        "description": `Bersih sampai akar h3h3h3`
       },
       "about": {
         "usage": `about`,
         "description": `Mau lihat bio saya? Siapa tau jodoh :*`,
         "contents": {
-          "aboutText": `<span class="yellowText"><i class="fa-duotone fa-hand-wave"></i></span> Halo, Konichiwa, Sampurasun, Punten.. Saya adalah seorang Yusuf yang memiliki sedikit pengetahuan dalam bidang IT seperti (Web Development). Kemudian saya juga ramah dan ramah senyum seperti joker. Diam menjadi beban, bergerak Task selesai semua :|`,
-        },
+          "aboutText": `<span class="yellowText"><i class="fa-duotone fa-hand-wave"></i></span> Halo, Konichiwa, Sampurasun, Punten.. Saya adalah seorang Yusuf yang memiliki sedikit pengetahuan dalam bidang IT seperti (Web Development). Kemudian saya juga ramah dan murah senyum seperti joker. Diam menjadi beban, bergerak Task selesai semua :|`
+        }
       },
       "social": {
         "usage": `social`,
@@ -58,29 +58,29 @@ const config = {
           "github": `<a href='https://github.com/yusufweebs' target='_blank'>GitHub</a> &nbsp;`,
           "githubURL": `https://github.com/yusufweebs`,
           "gitlab": `<a href='https://gitlab.com/yusufweebs' target='_blank'>Gitlab</a> &nbsp;`,
-          "gitlabURL": `https://gitlab.com/yusufweebs`,
-        },
+          "gitlabURL": `https://gitlab.com/yusufweebs`
+        }
       },
       "info": {
         "usage": `info`,
         "description": `Tenang ini bukan doxxing, cuma kamu & tuhan yang tau`,
         "contents": {
           "infoText": `<i class="fa-duotone fa-circle-info"></i> Information received about guest and website`,
-          "infoWarn": `<br><span class="yellowText"><i class="fa-duotone fa-triangle-exclamation"></i> This information is strictly not recorded</span>`,
-        },
+          "infoWarn": `<br><span class="yellowText"><i class="fa-duotone fa-triangle-exclamation"></i> This information is strictly not recorded</span>`
+        }
       },
       "exit": {
         "usage": `exit`,
         "description": `Tutup website`,
-        "reply": `<i class="fa-solid fa-square-check icone"></i>Terminal is closed. Gak ngaruh lah :v`,
+        "reply": `<i class="fa-solid fa-square-check icone"></i>Terminal is closed. Gak ngaruh lah :v`
       },
       "joke": {
         "usage": `joke`,
-        "description": `Jangan dibuka, cuma joke bapak bapak :v`,
+        "description": `Jangan dibuka, cuma joke bapak bapak :v`
       },
       "reload": {
         "usage": `reload`,
-        "description": `Refresh biar gak ngantuk.`,
+        "description": `Refresh biar gak ngantuk.`
       },
       "history": {
         "usage": `history`,
@@ -91,8 +91,8 @@ const config = {
         "clearHistory": {
           "usage": `clear --history`,
           "description": `Hapus semua riwayat.`,
-          "reply": `<i class="fa-solid fa-square-check sucess"></i> Clearing your history.`,
-        },
+          "reply": `<i class="fa-solid fa-square-check sucess"></i> Clearing your history.`
+        }
       },
       "ls": {
         "usage": `ls`,
@@ -108,34 +108,34 @@ const config = {
           <span class="redText">index.html</span> <br>
           <span class="blueText">README.md</span> <br>
           <span class="yellowText">server.js</span> <br>
-          vercel.json <br>`,
+          vercel.json <br>`
       },
       "blank": `<i class="fa-solid fa-square-xmark error"></i> Tulis sesuatu untuk melihat jumpscare`,
-      "commandNotFound": `Yahh,,, perintah nya gak valid. Ketik "<span class="sucess">help</span>".`,
+      "commandNotFound": `Yahh,,, perintah nya gak valid. Ketik "<span class="sucess">help</span>".`
     },
     "path": {
       "who": `#user`,
       "preposition": ` in`,
-      "file": ` ~/users/@yusufweebs`,
+      "file": ` ~/users/@yusufweebs`
     },
     "delays": {
       "system": {
         "getInput": 150,
-        "removeInput": 150,
+        "removeInput": 150
       },
       "welcome": {
         "first": 700,
-        "second": 1500,
-      },
+        "second": 1500
+      }
     },
     "system": {
       "mods": {
         "maintenance": false,
-        "maintenanceReply": `<span class="yellowText"><i class="fa-duotone fa-triangle-exclamation"></i> The website is under maintenance due to some bugs or update.</span>`,
-      },
-    },
-  },
-}
+        "maintenanceReply": `<span class="yellowText"><i class="fa-duotone fa-triangle-exclamation"></i> The website is under maintenance due to some bugs or update.</span>`
+      }
+    }
+  }
+};
 
 // Some Document Settings
 document.title = config.yusufweebs.website.title;
@@ -187,7 +187,7 @@ function falseValue(value) {
   const i = document.createElement("i");
   i.setAttribute("class", "fas fa-angle-right icone error");
   const mensagem = document.createElement("h2");
-  mensagem.setAttribute("class", "error")
+  mensagem.setAttribute("class", "error");
   mensagem.textContent = `${value}`;
   div.appendChild(i);
   div.appendChild(mensagem);
@@ -206,10 +206,9 @@ function createCode(code, text) {
   p.innerHTML = `${code}: <span class='text'> ${text} </span>`;
   app.appendChild(p);
 }
-
 async function openTerminal() {
   console.log(`%c Welcome to the console. You can review information about the commands you are using below.`, `color: #F5544D`);
-  createText(config.yusufweebs.welcome.image)
+  createText(config.yusufweebs.welcome.image);
   createText(config.yusufweebs.welcome.first);
   await delay(config.yusufweebs.delays.welcome.first);
   createText(config.yusufweebs.welcome.second);
@@ -229,7 +228,6 @@ app.addEventListener("keypress", async function (event) {
     newLine();
   }
 });
-
 app.addEventListener("click", function (event) {
   const input = document.querySelector("input");
   input.focus();
@@ -237,34 +235,42 @@ app.addEventListener("click", function (event) {
 
 // Data For The Info Command
 // Browser
-const browser = (function () {
+const browser = function () {
   const test = function (regexp) {
     return regexp.test(window.navigator.userAgent);
-  }
+  };
   switch (true) {
-    case test(/edg/i): return `<i class="fa-brands fa-edge"></i> Edge`;
-    case test(/opr/i) || test(/opera/i): return `<i class="fa-brands fa-opera"></i> Opera`;
-    case test(/chrome/i) && !!window.chrome: return `<i class="fa-brands fa-chrome"></i> Chrome`;
-    case test(/MSIE/i): return `<i class="fa-brands fa-internet-explorer"></i> Internet Explorer 10-`;
-    case test(/trident/i): return `<i class="fa-brands fa-internet-explorer"></i> Internet Explorer 11`;
-    case test(/firefox/i): return `<i class="fa-brands fa-firefox-browser"></i> Firefox`;
-    case test(/safari/i): return `<i class="fa-brands fa-safari"></i> Safari`;
-    default: return `<i class="fa-regular fa-globe"></i> Other`;
+    case test(/edg/i):
+      return `<i class="fa-brands fa-edge"></i> Edge`;
+    case test(/opr/i) || test(/opera/i):
+      return `<i class="fa-brands fa-opera"></i> Opera`;
+    case test(/chrome/i) && !!window.chrome:
+      return `<i class="fa-brands fa-chrome"></i> Chrome`;
+    case test(/MSIE/i):
+      return `<i class="fa-brands fa-internet-explorer"></i> Internet Explorer 10-`;
+    case test(/trident/i):
+      return `<i class="fa-brands fa-internet-explorer"></i> Internet Explorer 11`;
+    case test(/firefox/i):
+      return `<i class="fa-brands fa-firefox-browser"></i> Firefox`;
+    case test(/safari/i):
+      return `<i class="fa-brands fa-safari"></i> Safari`;
+    default:
+      return `<i class="fa-regular fa-globe"></i> Other`;
   }
-})();
+}();
 
 // Language
 var userLang = navigator.language || navigator.userLanguage;
 
 // OS
 function getOS() {
+  var _window$navigator;
   var userAgent = window.navigator.userAgent,
-    platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
+    platform = ((_window$navigator = window.navigator) === null || _window$navigator === void 0 || (_window$navigator = _window$navigator.userAgentData) === null || _window$navigator === void 0 ? void 0 : _window$navigator.platform) || window.navigator.platform,
     macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
     windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
     iosPlatforms = ['iPhone', 'iPad', 'iPod'],
     os = null;
-
   if (macosPlatforms.indexOf(platform) !== -1) {
     os = '<i class="fa-brands fa-apple"></i> Mac OS';
   } else if (iosPlatforms.indexOf(platform) !== -1) {
@@ -276,7 +282,6 @@ function getOS() {
   } else if (/Linux/.test(platform)) {
     os = '<i class="fa-brands fa-linux"></i> Linux';
   }
-
   return os;
 }
 
@@ -289,7 +294,7 @@ let path = window.location.protocol + '//' + window.location.hostname + ':' + wi
 // Window Resolution 
 var width = screen.width;
 var height = screen.height;
-const resolution = `Width: ${width}px, Height: ${height}px`
+const resolution = `Width: ${width}px, Height: ${height}px`;
 
 // Infos
 // Guest
@@ -307,28 +312,7 @@ const authorText = `<br> <span class="yellowText">Website Author:</span> ${confi
 const websiteRepoText = `<br> <span class="yellowText">Website Repo:</span> <a href="${config.yusufweebs.website.repo}">${config.yusufweebs.website.repo}</a>`;
 
 // Joke Command
-var jokes = [
-  'Tebakan berapa orang programmer yang dibutuhkan untuk mengganti bola lampu? Nol, itu masalah perangkat keras.',
-  'Hanya ada 10 jenis orang di dunia ini: yang tahu biner dan yang tidak.',
-  'Programmer sejati mulai menghitung dari 0.',
-  'Mengapa programmer berhenti dari pekerjaannya? Karena dia tidak mendapatkan array.',
-  'Seorang "foo" masuk ke sebuah bar, melihat sekeliling, dan berkata, "Halo Dunia."',
-  '0 adalah salah, 1 adalah benar, bukan? 1.',
-  'Tidak selalu segalanya hitam-putih (#000000 dan #FFFFFF).',
-  'Bahasa yang paling sering digunakan dalam pemrograman? Bahasa kasar.',
-  '!Salah, lucu karena benar.',
-  'Kamu punya saya saat mengatakan "Halo Dunia."',
-  '2b||!2b.',
-  'Kemarin saya mengubah nama wifi saya menjadi "Hack kalau bisa." Hari ini saya menemukannya berganti nama menjadi "Tantangan Diterima."',
-  'Seorang programmer adalah seseorang yang memperbaiki masalah yang tidak Anda ketahui dengan cara yang tidak Anda mengerti.',
-  'Bagaimana cara tahu jika seorang pecinta komputer adalah seorang ekstrovert? Mereka menatap sepatu Anda saat berbicara bukan sepatu mereka sendiri.',
-  'Saya ingin mengubah dunia, tetapi mereka tidak memberi saya kode sumber.',
-  'Jika pada awalnya Anda gagal, sebutlah itu versi 1.0.',
-  'Komputer membuat kesalahan dengan sangat cepat dan sangat akurat.',
-  'Saya kentut di toko Apple dan semua orang marah padaku. Bukan salahku mereka tidak memiliki Windows.',
-  'Tok Tok... Siapa? Seni... Seni Siapa? R2D2.',
-  'Hal yang lucu dan benar-benar nyata: jika pizza memiliki radius (z) dan kedalaman (a), volume pizza tersebut bisa didefinisikan sebagai Pi*z*z*a.'
-];
+var jokes = ['Tebakan berapa orang programmer yang dibutuhkan untuk mengganti bola lampu? Nol, itu masalah perangkat keras.', 'Hanya ada 10 jenis orang di dunia ini: yang tahu biner dan yang tidak.', 'Programmer sejati mulai menghitung dari 0.', 'Mengapa programmer berhenti dari pekerjaannya? Karena dia tidak mendapatkan array.', 'Seorang "foo" masuk ke sebuah bar, melihat sekeliling, dan berkata, "Halo Dunia."', '0 adalah salah, 1 adalah benar, bukan? 1.', 'Tidak selalu segalanya hitam-putih (#000000 dan #FFFFFF).', 'Bahasa yang paling sering digunakan dalam pemrograman? Bahasa kasar.', '!Salah, lucu karena benar.', 'Kamu punya saya saat mengatakan "Halo Dunia."', '2b||!2b.', 'Kemarin saya mengubah nama wifi saya menjadi "Hack kalau bisa." Hari ini saya menemukannya berganti nama menjadi "Tantangan Diterima."', 'Seorang programmer adalah seseorang yang memperbaiki masalah yang tidak Anda ketahui dengan cara yang tidak Anda mengerti.', 'Bagaimana cara tahu jika seorang pecinta komputer adalah seorang ekstrovert? Mereka menatap sepatu Anda saat berbicara bukan sepatu mereka sendiri.', 'Saya ingin mengubah dunia, tetapi mereka tidak memberi saya kode sumber.', 'Jika pada awalnya Anda gagal, sebutlah itu versi 1.0.', 'Komputer membuat kesalahan dengan sangat cepat dan sangat akurat.', 'Saya kentut di toko Apple dan semua orang marah padaku. Bukan salahku mereka tidak memiliki Windows.', 'Tok Tok... Siapa? Seni... Seni Siapa? R2D2.', 'Hal yang lucu dan benar-benar nyata: jika pizza memiliki radius (z) dan kedalaman (a), volume pizza tersebut bisa didefinisikan sebagai Pi*z*z*a.'];
 
 function generateJoke() {
   const randomIndex = Math.floor(Math.random() * jokes.length);
@@ -360,7 +344,6 @@ function saveHistory(value) {
   }
   localStorage.setItem("history", JSON.stringify(record));
 }
-
 async function commandHistory() {
   let record = JSON.parse(localStorage.getItem("history")) || [];
   if (record.length === 0) {
@@ -370,7 +353,7 @@ async function commandHistory() {
     for (let i = 0; i < record.length; ++i) {
       await createText(`<span class="redText">${(i + 1).toString()}</span>` + `<span class="redText">.</span> ` + record[i]);
     }
-    await createText(config.yusufweebs.commands.history.infoReply)
+    await createText(config.yusufweebs.commands.history.infoReply);
   }
 }
 // Clear History
@@ -399,17 +382,17 @@ async function getInputValue() {
     consoleSucess(value);
     document.title = `${config.yusufweebs.path.file}/${config.yusufweebs.commands.help.usage}`;
     createText(config.yusufweebs.commands.help.contents.helpText);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.help.usage, config.yusufweebs.commands.help.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.clear.usage, config.yusufweebs.commands.clear.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.about.usage, config.yusufweebs.commands.about.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.social.usage, config.yusufweebs.commands.social.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.info.usage, config.yusufweebs.commands.info.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.exit.usage, config.yusufweebs.commands.exit.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.joke.usage, config.yusufweebs.commands.joke.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.reload.usage, config.yusufweebs.commands.reload.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.history.usage, config.yusufweebs.commands.history.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.history.clearHistory.usage, config.yusufweebs.commands.history.clearHistory.description);
-    createCode(`<span class="redText">-</span> ` + config.yusufweebs.commands.ls.usage, config.yusufweebs.commands.ls.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.help.usage}</span>`, config.yusufweebs.commands.help.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.clear.usage}</span>`, config.yusufweebs.commands.clear.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.about.usage}</span>`, config.yusufweebs.commands.about.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.social.usage}</span>`, config.yusufweebs.commands.social.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.info.usage}</span>`, config.yusufweebs.commands.info.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.exit.usage}</span>`, config.yusufweebs.commands.exit.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.joke.usage}</span>`, config.yusufweebs.commands.joke.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.reload.usage}</span>`, config.yusufweebs.commands.reload.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.history.usage}</span>`, config.yusufweebs.commands.history.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.history.clearHistory.usage}</span>`, config.yusufweebs.commands.history.clearHistory.description);
+    createCode(`<span class="redText">-</span> ` + `<span class="spacer">${config.yusufweebs.commands.ls.usage}</span>`, config.yusufweebs.commands.ls.description);
     saveHistory(document.querySelector("input").value.trim().toLowerCase());
   }
   // About Command
@@ -446,8 +429,7 @@ async function getInputValue() {
     createText(config.yusufweebs.commands.social.contents.windowOpenReply);
     window.open(`${config.yusufweebs.commands.social.contents.instagramURL}`, '_blank');
     saveHistory(document.querySelector("input").value.trim().toLowerCase());
-  }
-  else if (value === `${config.yusufweebs.commands.social.usage} --github`) {
+  } else if (value === `${config.yusufweebs.commands.social.usage} --github`) {
     if (config.yusufweebs.system.mods.maintenance === true) {
       return;
     }
@@ -457,8 +439,7 @@ async function getInputValue() {
     createText(config.yusufweebs.commands.social.contents.windowOpenReply);
     window.open(`${config.yusufweebs.commands.social.contents.githubURL}`, '_blank');
     saveHistory(document.querySelector("input").value.trim().toLowerCase());
-  }
-  else if (value === `${config.yusufweebs.commands.social.usage} --gitlab`) {
+  } else if (value === `${config.yusufweebs.commands.social.usage} --gitlab`) {
     if (config.yusufweebs.system.mods.maintenance === true) {
       return;
     }
@@ -468,8 +449,7 @@ async function getInputValue() {
     createText(config.yusufweebs.commands.social.contents.windowOpenReply);
     window.open(`${config.yusufweebs.commands.social.contents.gitlabURL}`, '_blank');
     saveHistory(document.querySelector("input").value.trim().toLowerCase());
-  }
-  else if (value === `${config.yusufweebs.commands.social.usage} --linkedin`) {
+  } else if (value === `${config.yusufweebs.commands.social.usage} --linkedin`) {
     if (config.yusufweebs.system.mods.maintenance === true) {
       return;
     }
@@ -591,5 +571,4 @@ async function getInputValue() {
     saveHistory(document.querySelector("input").value + `&nbsp; <i class="fa-solid fa-square-xmark error"></i>`.trim().toLowerCase());
   }
 }
-
 openTerminal();
